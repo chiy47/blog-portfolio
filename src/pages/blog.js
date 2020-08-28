@@ -10,8 +10,8 @@ const BlogPage = () => {
         query {
             allContentfulBlogPost (
                 sort: {
-                  fields:publishedDate,
-                  order:DESC
+                    fields:publishedDate,
+                    order:DESC
                 },
                 filter: {
                     node_locale: {

@@ -15,6 +15,7 @@
   },
   "dependencies": {
     "@contentful/rich-text-react-renderer": "^14.1.1",
+    "emotion": "^10.0.27",
     "gatsby": "^2.24.41",
     "gatsby-cli": "^2.12.87",
     "gatsby-plugin-react-helmet": "^3.3.10",
@@ -27,8 +28,10 @@
     "gatsby-transformer-remark": "^2.8.28",
     "node-sass": "^4.14.1",
     "react": "^16.12.0",
+    "react-custom-share": "^0.4.8",
     "react-dom": "^16.12.0",
-    "react-helmet": "^6.1.0"
+    "react-helmet": "^6.1.0",
+    "react-icons": "^3.11.0"
   },
   "devDependencies": {
     "cross-env": "^7.0.2",
