@@ -3,24 +3,34 @@ import React from 'react'
 import Layout from '../components/layout'
 import resumeStyles from './resume.module.scss'
 import Head from '../components/head'
-import { Link } from 'gatsby'
+import ResumePdfDownload from "../components/resumepdfdownload";
 
 const ResumePage = () => {
     return (
        <Layout>
            <Head title="Resume" />
            <div className={resumeStyles.container}>
-               <section>
+               <section className={resumeStyles.top}>
                    <div className={resumeStyles.profile}>
                        <div className={resumeStyles.name}>Chi Duong</div>
                        <div className={resumeStyles.title}>Full Stack Web Developer</div>
                        <div className={resumeStyles.location}>Maryland, USA</div>
-                       <div className={resumeStyles.contact}><a href="mailto:chiduong4107@gmail.com" className={resumeStyles.linkItem}>chiduong4107@gmail.com</a></div>
-                       <div className={resumeStyles.intro}>
-                           <p>A technology enthusiast specializing in both backend and frontend tools
-                            is eager to find work and build interesting projects!</p>
-                        </div>   
+                       <div className={resumeStyles.contact}>
+                           <div>
+                           <a href="mailto:chiduong4107@gmail.com">chiduong4107@gmail.com</a>
+                           </div>
+                           <div>
+                           <a href="https://github.com/chiy47">https://github.com/chiy47</a>
+                           </div>
+                        </div>
                    </div>
+                   <div>
+                        <ResumePdfDownload />
+                   </div>
+                   <div className={resumeStyles.intro}>
+                        <p>A technology enthusiast specializing in both backend and frontend tools
+                            loves building interesting projects!</p>
+                    </div>   
                </section>
 
                <section className={resumeStyles.section}>
@@ -33,6 +43,9 @@ const ResumePage = () => {
                                     <div className={resumeStyles.description}>
                                         <p>
                                         -powered by Contentful, GatsbyJS and Netlify
+                                        <div>
+                                            <a href="https://github.com/chiy47/blog-portfolio">-link: https://github.com/chiy47/blog-portfolio</a>
+                                        </div>
                                         </p>
                                     </div>
                                 </div>
@@ -54,7 +67,7 @@ const ResumePage = () => {
                                     <div className={resumeStyles.jobCompany}>Towson University</div>
                                 </div>
                                 <div>
-                                    August 2015 - December 2019
+                                    June 2017 - December 2019
                                 </div>
                             </div>
                             <div className={resumeStyles.jobTitleContainer}>
