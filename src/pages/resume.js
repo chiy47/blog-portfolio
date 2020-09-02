@@ -26,6 +26,7 @@ const ResumePage = () => {
                    </div>
                    <div>
                         <ResumePdfDownload />
+                        <p className={resumeStyles.viewPdf}>(ctrl + click to review)</p>
                    </div>
                    <div className={resumeStyles.intro}>
                         <p>A technology enthusiast specializing in both backend and frontend tools
@@ -41,16 +42,14 @@ const ResumePage = () => {
                                 <div>
                                     <div className={resumeStyles.jobTitle}>Blog and Portfolio: a personal blog and portfolio</div>
                                     <div className={resumeStyles.description}>
-                                        <p>
-                                        -powered by Contentful, GatsbyJS and Netlify
+                                        <div>-powered by Contentful, GatsbyJS and Netlify</div>
                                         <div>
                                             <a href="https://github.com/chiy47/blog-portfolio">-link: https://github.com/chiy47/blog-portfolio</a>
                                         </div>
-                                        </p>
                                     </div>
                                 </div>
                                 <div>
-                                    August 2020 - present
+                                    Aug 2020 - present
                                 </div>
                             </div>
                         </div>
@@ -67,7 +66,7 @@ const ResumePage = () => {
                                     <div className={resumeStyles.jobCompany}>Towson University</div>
                                 </div>
                                 <div>
-                                    June 2017 - December 2019
+                                    Jun 2017 - Dec 2019
                                 </div>
                             </div>
                             <div className={resumeStyles.jobTitleContainer}>
@@ -87,27 +86,17 @@ const ResumePage = () => {
                <section className={resumeStyles.section}>
                    <div className={resumeStyles.sectionTitle}>Technical Skills</div>
                    <div>
-                        <div className={resumeStyles.skillsContainer}>
-                           <ul>
-                                <li>JavaScript</li>
-                                <li>HTML</li>
-                                <li>CSS</li>
-                           </ul>
-                           <ul>
-                                <li>Node.js</li>
-                                <li>Express.js</li>
-                                <li>MongoDB</li>
-                           </ul>
-                           <ul>
-                                <li>GatsbyJS</li>
-                                <li>Github</li>
-                           </ul>
+                        <div className={resumeStyles.jobTitleContainer}>
+                            <div className={resumeStyles.description}>
+                                <div>Languages: JavaScript, HTML, CSS</div>
+                                <div>Development: Node.js, Express, MongoDB, Gatsby.js</div>
+                            </div>
                        </div>
                    </div>
                </section>
 
                <section className={resumeStyles.section}>
-                    <div className={resumeStyles.sectionTitle}>Work Experience</div>
+                    <div className={resumeStyles.sectionTitle}>Work</div>
                     <div>
                         <div className={resumeStyles.job}>
                             <div className={resumeStyles.jobTitleContainer}>
@@ -121,7 +110,7 @@ const ResumePage = () => {
                                     </div>
                                 </div>
                                 <div>
-                                    June 2017 - May 2018
+                                    Jun 2017 - May 2018
                                 </div>
                             </div>
                         </div>

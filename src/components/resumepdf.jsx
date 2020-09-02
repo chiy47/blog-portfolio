@@ -105,22 +105,20 @@ const PdfResume = () => {
                         Projects
                     </Text>
 
-                    <Text style={styles.jobTitle}>
-                        Blog and Portfolio: a personal blog and portfolio
-                    </Text>
+                    <View>
+                        <Text style={styles.jobTitle}>
+                            Blog and Portfolio: A Personal Blog and Portfolio (08/2020 - present)
+                        </Text>
 
-                    <Text style={styles.jobDescription}> 
-                        -powered by Contentful, GatsbyJS and Netlify
-                    </Text>
+                        <Text style={styles.jobDescription}> 
+                            -powered by Contentful, GatsbyJS and Netlify
+                        </Text>
 
-                    <Text style={styles.jobDescription}>
-                        <Link style={styles.linkItem} src="https://github.com/chiy47/blog-portfolio">
+                        <Text style={styles.jobDescription}>
+                            <Link style={styles.linkItem} src="https://github.com/chiy47/blog-portfolio">
                             -link: https://github.com/chiy47/blog-portfolio</Link>
-                    </Text>
-
-                    <Text style={styles.jobDescription}>
-                        August 2020 - present
-                    </Text>
+                        </Text>
+                    </View>
                 </View>
 
                 <View style={styles.section}>
@@ -129,7 +127,7 @@ const PdfResume = () => {
                     </Text>
 
                     <Text style={styles.jobTitle}>
-                        Bachelor of Computer Science
+                        Bachelor of Computer Science (06/2017 - 12/2019)
                     </Text>
 
                     <Text style={styles.jobDescription}>
@@ -137,19 +135,15 @@ const PdfResume = () => {
                     </Text>
 
                     <Text style={styles.jobDescription}>
-                        June 2017 - December 2019
+                        
                     </Text>
 
                     <Text style={styles.jobTitle}>
-                        Doris K. Lidtke Excellence in Service Award Scholarship
+                        Doris K. Lidtke Excellence in Service Award Scholarship (05/2018)
                     </Text>
 
                     <Text style={styles.jobDescription}>
                         Towson University
-                    </Text>
-
-                    <Text style={styles.jobDescription}>
-                        May 2018
                     </Text>
 
                     <Text style={styles.jobTitle}>
@@ -165,15 +159,18 @@ const PdfResume = () => {
                     <Text style={styles.jobDescription}>
                         Languages: JavaScript, HTML, CSS
                     </Text>
+                    <Text style={styles.jobDescription}>
+                        Development: Node.js, Express, MongoDB, Gatsby.js
+                    </Text>                    
                 </View>
 
                 <View style={styles.lastSection}>
                     <Text style={styles.sectionTitle}>
-                        Work Experience
+                        Work
                     </Text>
 
                     <Text style={styles.jobTitle}>
-                        Math Tutor
+                        Math Tutor (06/2017 - 05/2018)
                     </Text>
 
                     <Text style={styles.jobDescription}>
@@ -182,10 +179,6 @@ const PdfResume = () => {
 
                     <Text style={styles.jobDescription}>
                         -tutored Calculus, Linear Algebra, and Statistics for students
-                    </Text>
-
-                    <Text style={styles.jobDescription}>
-                        June 2017 - May 2018
                     </Text>
                 </View>
             </Page>

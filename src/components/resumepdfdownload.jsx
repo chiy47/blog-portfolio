@@ -10,7 +10,7 @@ const styles = StyleSheet.create({
         color: "#4a4a4a",
         backgroundColor: "#f2f2f2",
         //border: "1px solid #4a4a4a"
-    }
+    },
 })
 
 const ResumePdfDownload = () => {
@@ -23,9 +23,8 @@ const ResumePdfDownload = () => {
                 {({ blob, url, loading, error }) => {
                     return loading ? 'Loading document...' : 'Download PDF'
                 }}        
-            </PDFDownloadLink>
+            </PDFDownloadLink>  
         </div>
-        
     )
 }
 
