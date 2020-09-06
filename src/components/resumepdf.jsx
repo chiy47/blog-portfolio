@@ -84,6 +84,11 @@ const PdfResume = () => {
                         </Text>
 
                         <Text style={styles.contact}>
+                        <Link style={styles.linkItem} src="tel:240-584-3783">
+                                240-584-3783</Link>
+                        </Text>
+
+                        <Text style={styles.contact}>
                             <Link style={styles.linkItem} src="mailto:chiduong4107@gmail.com">
                                 chiduong4107@gmail.com</Link>
                         </Text>

@@ -16,6 +16,9 @@ const ResumePage = () => {
                        <div className={resumeStyles.title}>Full Stack Web Developer</div>
                        <div className={resumeStyles.location}>Maryland, USA</div>
                        <div className={resumeStyles.contact}>
+                            <div>
+                           <a href="tel:240-584-3783">240-584-3783</a>
+                           </div>
                            <div>
                            <a href="mailto:chiduong4107@gmail.com">chiduong4107@gmail.com</a>
                            </div>
