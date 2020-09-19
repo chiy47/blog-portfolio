@@ -28,7 +28,7 @@ const styles = StyleSheet.create({
     about: {
         margin: 14,
         fontSize: 11,
-        textAlign: 'justify',
+        textAlign: 'center',
     },
     
     linkItem: {
@@ -99,8 +99,7 @@ const PdfResume = () => {
                         </Text>
 
                         <Text style={styles.about}>
-                        A technology enthusiast having experience in both backend and frontend tools 
-                        is eager to find junior positions and build interesting projects.
+                        A technology enthusiast is eager to find a junior position and build interesting projects.
                         </Text>
                     </View>
                 </View>
@@ -117,6 +116,11 @@ const PdfResume = () => {
 
                         <Text style={styles.jobDescription}> 
                             -powered by Contentful, GatsbyJS and Netlify
+                        </Text>
+
+                        <Text style={styles.jobDescription}>
+                            <Link style={styles.linkItem} src="https://musing-swirles-ab27a1.netlify.app/">
+                            -demo: https://musing-swirles-ab27a1.netlify.app/</Link>
                         </Text>
 
                         <Text style={styles.jobDescription}>

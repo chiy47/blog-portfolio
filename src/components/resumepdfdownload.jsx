@@ -1,14 +1,16 @@
 import React, { useState, useEffect } from 'react';
-import { PDFDownloadLink, StyleSheet } from "@react-pdf/renderer";
+import { PDFViewer, PDFDownloadLink, StyleSheet } from "@react-pdf/renderer";
 
 import PdfResume from "./resumepdf";
 
 const styles = StyleSheet.create({
     button: {
         textDecoration: "none",
-        padding: "10px",
-        color: "#4a4a4a",
-        backgroundColor: "#f2f2f2",
+        marginRight: "0px",
+        //padding: "7px",
+        //color: "#4a4a4a",
+        //backgroundColor: "#f1f1f1",
+        fontSize: "15px",
         //border: "1px solid #4a4a4a"
     },
 })
@@ -23,12 +25,12 @@ const ResumePdfDownload = () => {
     return (
         <div>
             {isClient && (
-                <PDFDownloadLink 
+                <PDFDownloadLink
                     document={<PdfResume />} 
-                    fileName="resumeChiDuong.pdf"
                     style={styles.button}>
                     {({ blob, url, loading, error }) => {
-                        return loading ? 'Loading document...' : 'Download PDF'
+                        return loading ? 'Loading document...' : 
+                        <a href={url} target="blank">PDF</a>
                     }}        
                 </PDFDownloadLink>
             )} 

@@ -3,12 +3,13 @@ import React from 'react'
 import Layout from '../components/layout'
 import resumeStyles from './resume.module.scss'
 import Head from '../components/head'
-import ResumePdfDownload from "../components/resumepdfdownload";
+import ResumePdfDownload from "../components/resumepdfdownload"
 
 const ResumePage = () => {
     return (
        <Layout>
            <Head title="Resume" />
+           <h1>Resume</h1>
            <div className={resumeStyles.container}>
                <section className={resumeStyles.top}>
                    <div className={resumeStyles.profile}>
@@ -29,12 +30,7 @@ const ResumePage = () => {
                    </div>
                    <div>
                         <ResumePdfDownload />
-                        <p className={resumeStyles.viewPdf}>(ctrl + click to review)</p>
                    </div>
-                   <div className={resumeStyles.intro}>
-                        <p>A technology enthusiast specializing in both backend and frontend tools
-                            loves building interesting projects!</p>
-                    </div>   
                </section>
 
                <section className={resumeStyles.section}>
@@ -45,14 +41,17 @@ const ResumePage = () => {
                                 <div>
                                     <div className={resumeStyles.jobTitle}>Blog and Portfolio: a personal blog and portfolio</div>
                                     <div className={resumeStyles.description}>
-                                        <div>-powered by Contentful, GatsbyJS and Netlify</div>
+                                        <div>-powered by Contentful, Gatsby.js and Netlify</div>
+                                        <div>
+                                            <a href="https://musing-swirles-ab27a1.netlify.app/">-demo: https://musing-swirles-ab27a1.netlify.app/</a>
+                                        </div>
                                         <div>
                                             <a href="https://github.com/chiy47/blog-portfolio">-link: https://github.com/chiy47/blog-portfolio</a>
                                         </div>
                                     </div>
                                 </div>
-                                <div>
-                                    Aug 2020 - present
+                                <div className={resumeStyles.date}>
+                                    2020/08 - present
                                 </div>
                             </div>
                         </div>
@@ -68,8 +67,8 @@ const ResumePage = () => {
                                     <div className={resumeStyles.jobTitle}>Bachelor of Computer Science</div>
                                     <div className={resumeStyles.jobCompany}>Towson University</div>
                                 </div>
-                                <div>
-                                    Jun 2017 - Dec 2019
+                                <div className={resumeStyles.date}>
+                                    2017/06 - 2019/12
                                 </div>
                             </div>
                             <div className={resumeStyles.jobTitleContainer}>
@@ -78,8 +77,8 @@ const ResumePage = () => {
                                     <div className={resumeStyles.jobTitle}>Dean’s List (4 semesters)</div>
                                     <div className={resumeStyles.jobCompany}>Towson University</div>
                                 </div>
-                                <div>
-                                    May 2018
+                                <div className={resumeStyles.date}>
+                                    2018/05
                                 </div>
                             </div>
                         </div>
@@ -88,12 +87,15 @@ const ResumePage = () => {
 
                <section className={resumeStyles.section}>
                    <div className={resumeStyles.sectionTitle}>Technical Skills</div>
-                   <div>
-                        <div className={resumeStyles.jobTitleContainer}>
-                            <div className={resumeStyles.description}>
-                                <div>Languages: JavaScript, HTML, CSS</div>
-                                <div>Development: Node.js, Express, MongoDB, Gatsby.js</div>
-                            </div>
+                   <div className={resumeStyles.job}>
+                        <div className={resumeStyles.skillTitleContainer}>
+                            <div className={resumeStyles.jobTitle}>Languages</div>
+                            <div className={resumeStyles.skill}>JavaScript, HTML, CSS</div>
+                       </div>
+
+                       <div className={resumeStyles.skillTitleContainer}>
+                            <div className={resumeStyles.jobTitle}>Development</div>
+                            <div className={resumeStyles.skill}>Node.js, Express, MongoDB, Gatsby.js</div>
                        </div>
                    </div>
                </section>
@@ -112,8 +114,8 @@ const ResumePage = () => {
                                         </p>
                                     </div>
                                 </div>
-                                <div>
-                                    Jun 2017 - May 2018
+                                <div className={resumeStyles.date}>
+                                    2017/06 - 2018/05
                                 </div>
                             </div>
                         </div>

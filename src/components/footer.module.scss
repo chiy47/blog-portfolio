@@ -1,3 +1,21 @@
 .footer {
     margin-top: 3rem;
+    p {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+.icons-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.icons {
+    font-size: 30px;
+    width: 30px;
+    margin-right: .5em;
+    margin-bottom: .3em;
 }
