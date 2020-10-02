@@ -1,5 +1,6 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link, graphql, useStaticQuery } from 'gatsby'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import headerStyles from './header.module.scss'
 
@@ -14,32 +15,56 @@ const Header = () => {
         }
     `)
 
+    const [click, setClick] = useState(false);
+    const [header, setHeader] = useState(false);
+
+    const handleClick = () => setClick(!click);
+    const closeMobileMenu = () => setClick(false);
+
+    const changeBackground = () => {
+        if(window.scrollY >= 40) {
+            setHeader(true);
+        } else {
+            setHeader(false);
+        }
+    }
+
+    window.addEventListener('scroll', changeBackground);
+
     return (
         <header className={headerStyles.header}>
             <h1>
-                <Link className={headerStyles.title} to="/">
+                <Link className={headerStyles.title} to="/" onClick={closeMobileMenu}>
                     {data.site.siteMetadata.title}
                 </Link>
             </h1>
+
+            
+            <div className={headerStyles.icons} onClick={handleClick}>
+                {click ? <FontAwesomeIcon icon={["fas", "times"]} />
+                : <FontAwesomeIcon icon={["fas", "bars"]} />}
+            </div>
+              
+
             <nav>
-                <ul className={headerStyles.navList}>
+                <ul className={click ? headerStyles.mobileNavList : headerStyles.navList} click={click}>
                     <li>
-                       <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/">Home</Link> 
+                       <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/" onClick={closeMobileMenu}>Home</Link> 
                     </li>
                     <li>
-                       <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/about">About</Link> 
+                       <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/about" onClick={closeMobileMenu}>About</Link> 
                     </li>
                     <li>
-                       <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/resume">Resume</Link> 
+                       <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/resume" onClick={closeMobileMenu}>Resume</Link> 
                     </li>
                     <li>
-                       <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/project">Project</Link> 
+                       <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/project" onClick={closeMobileMenu}>Project</Link> 
                     </li>
                     <li>
-                       <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/blog">Blog</Link> 
+                       <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/blog" onClick={closeMobileMenu}>Blog</Link> 
                     </li>
                     <li>
-                       <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/contact">Contact</Link> 
+                       <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/contact" onClick={closeMobileMenu}>Contact</Link> 
                     </li>
                 </ul>
             </nav>

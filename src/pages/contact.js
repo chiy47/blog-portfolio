@@ -43,43 +43,52 @@ const ContactPage = () => {
     return (
         <Layout>
             <Head title="Contact" />
-            <h1>Let's Get In Touch :)</h1>
+            <h1 className={contactStyles.contact}>Contact</h1>
             <div className={contactStyles.container}>
                 <div className={contactStyles.contactBody}>
 
-                    <div className={contactStyles.leftBody}>
+                <div className={contactStyles.topBody}>
+                        <div className={contactStyles.contactDetail}>
+                            <ul>
+                                <li><FontAwesomeIcon icon={["fas", "phone"]} className={contactStyles.icons} /><a href="tel:240-584-3783"><span>240-584-3783</span></a></li>
+                                <li><FontAwesomeIcon icon={["fas", "envelope"]} className={contactStyles.icons} /><a href="mailto:chiduong4107@gmail.com"><span>chiduong4107@gmail.com</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div className={contactStyles.bottomBody}>
                         <div className={contactStyles.contactForm}>
                             <form onSubmit={handleOnSubmit} enctype="multipart/form-data" netlify-honeypot="bot-field" data-netlify="true" name="contact">
                                 <div className={contactStyles.formGroup}>
-                                    <label>
+                                    <label for="name">
                                         Full Name
                                         <input className={contactStyles.formControl} type="text" name="name" id="name" required />
                                     </label>
                                 </div>
 
                                 <div className={contactStyles.formGroup}>
-                                    <label>
+                                    <label for="phone">
                                         Phone Number (optional)
                                         <input className={contactStyles.formControl} type="phone" name="phone" id="phone" />
                                     </label>
                                 </div>
                 
                                 <div className={contactStyles.formGroup}>
-                                    <label>
+                                    <label for="email">
                                         Email
                                         <input className={contactStyles.formControl} type="email" name="email" id="email" required />
                                     </label>
                                 </div>
                 
                                 <div className={contactStyles.formGroupMsg}>
-                                    <label>
+                                    <label for="message">
                                         Message
                                         <textarea className={contactStyles.formControl} name="message" id="message" rows="5" required />
                                     </label>
                                 </div>
 
                                 <div className={contactStyles.formGroup}>
-                                    <label>
+                                    <label for="file">
                                         Upload File (optional)
                                         <input className={contactStyles.formControlFile} type="file" name="file" id="myFile" />                
                                     </label>
@@ -98,15 +107,6 @@ const ContactPage = () => {
                                     )}
                                 </div>   
                             </form>
-                        </div>
-                    </div>
-
-                    <div className={contactStyles.rightBody}>
-                        <div className={contactStyles.contactDetail}>
-                            <ul>
-                                <li><FontAwesomeIcon icon="phone" className={contactStyles.icons} /><a href="tel:240-584-3783"><span>240-584-3783</span></a></li>
-                                <li><FontAwesomeIcon icon="envelope" className={contactStyles.icons} /><a href="mailto:chiduong4107@gmail.com"><span>chiduong4107@gmail.com</span></a></li>
-                            </ul>
                         </div>
                     </div>
 

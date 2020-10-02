@@ -1,11 +1,17 @@
+.contact {
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
 .container {
-    margin-right: 150px;
+    margin: 0 120px;
 }
 
 .contact-body {
     display: grid;
-    grid-template-columns: 1.5fr 1fr; 
-    column-gap: 40px;
+    grid-template-rows: .2fr 2fr; 
+    column-gap: 20px;
 }
 
 .form-group {
@@ -73,6 +79,7 @@ ul {
 
 span {
     padding: 8px;
+    font-size: 16px;
 }
 
 
@@ -82,7 +89,7 @@ span {
         grid-template-columns: 1fr; 
     }
 
-    .right-body {
+    .top-body {
         margin-bottom: 10px;
     }
     /*
@@ -98,7 +105,7 @@ span {
         display: none;
     } */
 
-    .left-body {
+    .bottom-body {
         margin-bottom: 0;
     }
 }

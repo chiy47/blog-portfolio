@@ -1,7 +1,7 @@
 .container {
     margin: 0 auto;
-    max-width: 950px;
-    padding: 1rem;
+    max-width: 1000px;
+    padding: 1em;
 
     display: flex;
     flex-direction: column;
@@ -10,4 +10,8 @@
 
 .content {
     flex-grow: 1;
+}
+
+.body {
+    margin-top: 4em;
 }

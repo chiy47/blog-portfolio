@@ -9,7 +9,7 @@ const ResumePage = () => {
     return (
        <Layout>
            <Head title="Resume" />
-           <h1>Resume</h1>
+           <h1 className={resumeStyles.resume}>Resume</h1>
            <div className={resumeStyles.container}>
                <section className={resumeStyles.top}>
                    <div className={resumeStyles.profile}>
