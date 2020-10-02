@@ -21,16 +21,6 @@ const Header = () => {
     const handleClick = () => setClick(!click);
     const closeMobileMenu = () => setClick(false);
 
-    const changeBackground = () => {
-        if(window.scrollY >= 40) {
-            setHeader(true);
-        } else {
-            setHeader(false);
-        }
-    }
-
-    window.addEventListener('scroll', changeBackground);
-
     return (
         <header className={headerStyles.header}>
             <h1>
