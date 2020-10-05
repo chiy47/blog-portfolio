@@ -103,6 +103,19 @@ const PdfResume = () => {
                         </Text>
                     </View>
                 </View>
+
+                <View style={styles.section}>
+                    <Text style={styles.sectionTitle}>
+                        Technical Skills
+                    </Text>
+
+                    <Text style={styles.jobDescription}>
+                        Languages: JavaScript, HTML, CSS
+                    </Text>
+                    <Text style={styles.jobDescription}>
+                        Development: Node.js, Express.js, MongoDB, Gatsby.js, React
+                    </Text>                    
+                </View>
                 
                 <View style={styles.section}>
                     <Text style={styles.sectionTitle}>
@@ -125,7 +138,7 @@ const PdfResume = () => {
 
                         <Text style={styles.jobDescription}>
                             <Link style={styles.linkItem} src="https://github.com/chiy47/blog-portfolio">
-                            -link: https://github.com/chiy47/blog-portfolio</Link>
+                            -repo: https://github.com/chiy47/blog-portfolio</Link>
                         </Text>
                     </View>
                 </View>
@@ -158,19 +171,6 @@ const PdfResume = () => {
                     <Text style={styles.jobTitle}>
                         Dean’s List (4 semesters)
                     </Text>
-                </View>
-
-                <View style={styles.section}>
-                    <Text style={styles.sectionTitle}>
-                        Technical Skills
-                    </Text>
-
-                    <Text style={styles.jobDescription}>
-                        Languages: JavaScript, HTML, CSS
-                    </Text>
-                    <Text style={styles.jobDescription}>
-                        Development: Node.js, Express, MongoDB, Gatsby.js
-                    </Text>                    
                 </View>
 
                 <View style={styles.lastSection}>
