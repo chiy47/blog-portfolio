@@ -1,17 +1,13 @@
-.container {
-    margin: 0 auto;
-    max-width: 1000px;
-    padding: 1em;
-
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-.content {
-    flex-grow: 1;
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 .body {
-    margin-top: 4em;
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 1em;
+    min-height: 100vh;
 }
+

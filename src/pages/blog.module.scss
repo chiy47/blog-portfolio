@@ -1,12 +1,12 @@
-.blog {
+.blog-title {
     text-align: center;
-    margin-top: 2em;
-    margin-bottom: 1em;
+    margin-top: 0;
+    margin-bottom: .5em;
 }
 
 .posts {
     list-style-type: none;
-    margin: 0 50px; 
+    margin: 0 2em;
 }
 
 .post {
@@ -16,9 +16,9 @@
         background: #f4f4f4;
         color: #000000;
         display: block;
-        padding: 1rem;
+        padding: 1em;
         text-decoration: none;
-        border-radius: 3px;
+        //border-radius: 3px;
     }
 
     a:hover {
@@ -26,13 +26,21 @@
     }
 
     h2 {
+        text-align: center;
         margin-bottom: 0;
         color: #000000;
     }
     
     p {
+        text-align: center;
         color: #777777;
-        font-size: .8rem;
+        font-size: .8em;
         font-style: italic;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .blog-title {
+        margin: 1em auto .5em auto;
     }
 }

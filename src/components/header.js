@@ -16,7 +16,6 @@ const Header = () => {
     `)
 
     const [click, setClick] = useState(false);
-    const [header, setHeader] = useState(false);
 
     const handleClick = () => setClick(!click);
     const closeMobileMenu = () => setClick(false);

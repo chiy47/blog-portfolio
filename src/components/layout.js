@@ -16,14 +16,12 @@ const Layout = (props) => {
     return (
         <div className={layoutStyles.margin}>
             <Header />
-            <div className={layoutStyles.container}>
-                <div className={layoutStyles.content}>
-                    <div className={layoutStyles.body}>
-                        {props.children} 
-                    </div>          
-                </div>
-            </div>
-        <Footer />
+
+            <div className={layoutStyles.body}>
+                {props.children} 
+            </div>          
+
+            <Footer />
         </div>
     )
 }
