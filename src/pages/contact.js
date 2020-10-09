@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
 import axios from 'axios'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import Layout from '../components/layout'
 import Head from '../components/head'
 import contactStyles from './contact.module.scss'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const ContactPage = () => {
     
@@ -56,14 +56,14 @@ const ContactPage = () => {
                     <form className={contactStyles.contactForm} onSubmit={handleOnSubmit} enctype="multipart/form-data" netlify-honeypot="bot-field" data-netlify="true" name="contact">            
                         <div className={contactStyles.guestName}>
                             <div className={contactStyles.formGroup}>
-                                <label for="name">
-                                    <input className={contactStyles.formControl} type="text" name="name" id="name" placeholder="First Name *" required />
+                                <label for="firstname">
+                                    <input className={contactStyles.formControl} type="text" name="firstname" id="firstname" placeholder="First Name *" required />
                                 </label>
                             </div>
 
                             <div className={contactStyles.formGroup}>
-                                <label for="name">
-                                    <input className={contactStyles.formControl} type="text" name="name" id="name" placeholder="Last Name *" required />
+                                <label for="lastname">
+                                    <input className={contactStyles.formControl} type="text" name="lastname" id="name" placeholder="Last Name *" required />
                                 </label>
                             </div>
                         </div>

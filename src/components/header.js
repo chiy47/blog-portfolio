@@ -37,22 +37,22 @@ const Header = () => {
 
             <nav>
                 <ul className={click ? headerStyles.mobileNavList : headerStyles.navList} click={click}>
-                    <li>
+                     <li className={headerStyles.navLink}>
                        <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/" onClick={closeMobileMenu}>Home</Link> 
                     </li>
-                    <li>
+                    <li className={headerStyles.navLink}>
                        <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/about" onClick={closeMobileMenu}>About</Link> 
                     </li>
-                    <li>
+                    <li className={headerStyles.navLink}>
                        <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/resume" onClick={closeMobileMenu}>Resume</Link> 
                     </li>
-                    <li>
+                    <li className={headerStyles.navLink}>
                        <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/project" onClick={closeMobileMenu}>Project</Link> 
                     </li>
-                    <li>
+                    <li className={headerStyles.navLink}>
                        <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/blog" onClick={closeMobileMenu}>Blog</Link> 
                     </li>
-                    <li>
+                    <li className={headerStyles.navLink}>
                        <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/contact" onClick={closeMobileMenu}>Contact</Link> 
                     </li>
                 </ul>

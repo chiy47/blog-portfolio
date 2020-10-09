@@ -110,7 +110,7 @@ const PdfResume = () => {
                     </Text>
 
                     <Text style={styles.jobDescription}>
-                        Languages: JavaScript, HTML, CSS
+                        Languages: JavaScript, HTML, CSS/SASS
                     </Text>
                     <Text style={styles.jobDescription}>
                         Development: Node.js, Express.js, MongoDB, Gatsby.js, React
@@ -128,7 +128,7 @@ const PdfResume = () => {
                         </Text>
 
                         <Text style={styles.jobDescription}> 
-                            -powered by Contentful, GatsbyJS and Netlify
+                            -powered by CMS Contentful, GatsbyJS and Netlify
                         </Text>
 
                         <Text style={styles.jobDescription}>
@@ -160,14 +160,21 @@ const PdfResume = () => {
                         
                     </Text>
 
-                    <Text style={styles.jobTitle}>
-                        Doris K. Lidtke Excellence in Service Award Scholarship (05/2018)
-                    </Text>
+                    <View>
+                        <Text style={styles.jobTitle}>
+                            Doris K. Lidtke Excellence in Service Award Scholarship (05/2018)
+                        </Text>
 
-                    <Text style={styles.jobDescription}>
-                        Towson University
-                    </Text>
+                        <Text style={styles.jobDescription}>
+                            Towson University
+                        </Text>
 
+                        <Text style={styles.jobDescription}>
+                            -a $3,000 scholarship for seniors in the Department of Computer and Information Sciences 
+                            with a 3.5 GPA and extracurricular involvement in tutoring and volunteer service
+                        </Text>
+                    </View>
+                   
                     <Text style={styles.jobTitle}>
                         Dean’s List (4 semesters)
                     </Text>

@@ -90,6 +90,10 @@ const ResumePage = () => {
                                 <div className={resumeStyles.jobInfo}>
                                     <div className={resumeStyles.jobTitle}>Doris K. Lidtke Excellence in Service Award Scholarship</div>
                                     <div className={resumeStyles.jobCompany}>Towson University</div>
+                                    <div className={resumeStyles.description}>
+                                    -a $3,000 scholarship for seniors in the Department of Computer and Information Sciences 
+                                    with a 3.5 GPA and extracurricular involvement in tutoring and volunteer service
+                                    </div>
                                 </div>
                                 <div className={resumeStyles.date}>
                                     2018/05

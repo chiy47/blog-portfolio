@@ -17,10 +17,10 @@ const Footer = () => {
     return (
         <footer className={footerStyles.footer}>
             <div className={footerStyles.iconsContainer}>
-                <div className={footerStyles.icons}>
+                <div className={footerStyles.icon}>
                     <a href="https://github.com/chiy47" target="blank"><FontAwesomeIcon icon={["fab", "github"]} /></a> 
                 </div>
-                <div className={footerStyles.icons}>
+                <div className={footerStyles.icon}>
                     <a href="https://www.linkedin.com/in/chi-duong-b88098175/" target="blank"><FontAwesomeIcon icon={["fab", "linkedin"]} /></a> 
                 </div>
         </div>
