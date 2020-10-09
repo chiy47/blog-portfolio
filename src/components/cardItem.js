@@ -6,12 +6,12 @@ import cardsStyles from './cards.module.scss'
 
 const CardItem = (props) => {
     const cardsList = props.label.map((label) => 
-        <li className={cardsStyles.toolsItem} key={label.toString()}>{label}</li>)
+        <li className={cardsStyles.toolItem} key={label.toString()}>{label}</li>)
 
     return (
         <div className={cardsStyles.cardItem}>
             <figure className={cardsStyles.picWrapper}>     
-                <img src={props.src} alt="Blog/Portfolio" className={cardsStyles.img} />
+                <img src={props.src} alt="Blog/Portfolio" className={cardsStyles.cardItemImage} />
             </figure>
             <div className={cardsStyles.cardItemInfo}>
                 <h5 className={cardsStyles.cardItemText}>{props.text}</h5>
