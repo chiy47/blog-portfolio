@@ -1,7 +1,7 @@
 .about-container {
     margin: 0 2em;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
 .about-title {
@@ -12,9 +12,6 @@
 
 .about-image {
     padding-top: 1em;
-    max-width: 100%;
-    width: 340px;
-    height: 480px;
 }
 
 .about-text {
@@ -36,19 +33,11 @@
 
 @media only screen and (min-width: 768px) {
     .about-container {
-        flex-direction: row;
-        justify-content: space-evenly;
+        grid-template-columns: 1fr 1fr;
     }
 
     .about-title {
         margin: 1em auto .5em auto;
-    }
-
-    .about-image {
-        width:50%;
-        max-width: 100%;
-        width: 400px;
-        height: 540px;
     }
 
     .about-text {
