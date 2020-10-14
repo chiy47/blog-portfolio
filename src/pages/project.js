@@ -13,7 +13,9 @@ const ProjectPage = () => {
        <Layout>
            <Head title="Project" />
            <h1 className={projectStyles.projectTitle}>Project</h1>
-            <Cards />
+           <div className={projectStyles.projectContainer}>
+                <Cards />
+           </div>
        </Layout> 
     )
 }

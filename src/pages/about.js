@@ -10,13 +10,15 @@ const AboutPage = () => {
     return (
        <Layout>
             <Head title="About" />        
-            <h1 className={aboutStyles.aboutTitle}>About</h1>
+            <h1 className={aboutStyles.aboutTitle}>About Me</h1>
             <div className={aboutStyles.aboutContainer}>
-                <img className={aboutStyles.aboutImage} src={Pink} alt="Chi" />
-                
+                <div className={aboutStyles.imageContainer}>
+                    <img className={aboutStyles.aboutImage} src={Pink} alt="Chi" />
+                </div> 
+
                 <div className={aboutStyles.aboutText}>
-                    <p><span className={aboutStyles.firstCharacter}>M</span>
-                    y name is Chi Duong (pronounced “Chee Yoong”. 
+                    <p><span className={aboutStyles.firstCharacter}>H</span>
+                    i, my name is Chi Duong (pronounced “Chee Yoong”. 
                     The "Y" sound was enunciated for the letter "D"). 
                         I am a web developer based in Maryland, USA.</p>
 
@@ -26,14 +28,14 @@ const AboutPage = () => {
                     <p>As a child, I am good at drawing and see beauty potentials in things. 
                         I am also a curious and nerdy girl. 
                         I love maths, science, technology, chess, and board games.
-                        I seek to combine my artistic and problem solving skills into tech.</p>
+                        I seek to combine my artistic and problem-solving skills into tech.</p>
 
                     <p>I always wanted to make my own blog. 
-                        I am looking forward to seeing how it will grow.</p>
+                        I am looking forward to seeing its growth.</p>
                     
-                    <p>I aspire to make intuitive, elegant, and to-the-point websites. 
-                        My desire is to implement smart and minimalist designs into my professional and personal life.</p>
-                    <p><Link to="/contact">Want to work with me? Reach out.</Link></p>
+                    <p>I aspire to make intuitive, elegant, and to-the-point websites, and implement smart and minimalist designs into my professional and personal life.</p>
+
+                    <p><Link to="/contact" className={aboutStyles.workWithMe}>Want to work with me? Reach out.</Link></p>
                 </div>
             </div>
        </Layout> 

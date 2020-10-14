@@ -1,12 +1,16 @@
+.header {
+    background: white;
+}
+
 .title {
     text-decoration: none;
-    display: inline-block;
     font-size: .7em;
+    color: #F9DCC4;
     margin-left: 1em;
 }
 
 .title:hover {
-    color: black;
+    color: #F9DCC4;
 }
 
 .icons {
@@ -16,6 +20,7 @@
     top: .5em;
     right: 1em;
     font-size: 1.5em;
+    color: #F9DCC4;
 }
 
 .mobile-nav-list {
@@ -36,25 +41,24 @@
     .nav-item {
         cursor: pointer;
         transition: .6s ease;
-        color: rgb(119, 119, 119);
+        color: #ffb5a7;
     }
 }
 
 .nav-item {
-    color: darkgray;
+    color: #a89496;
     text-decoration: none;
     font-size: .9em;
 }
 
 .active-nav-item {
-    color: black;
+    color: #ffb5a7;
 }
 
 
 
 @media screen and (min-width: 768px) {
     .header {
-        background: white;
         position: fixed;
         display: flex;
         justify-content: space-between;
@@ -64,7 +68,7 @@
         z-index: 1;
         padding-top: .5em;
     }
-    
+
     .title {
         margin-top: .5em;
     }

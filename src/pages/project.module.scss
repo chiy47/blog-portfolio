@@ -1,11 +1,21 @@
+.project-container {
+    margin: 0 1em;
+    padding: 0;
+}
+
 .project-title {
     text-align: center;
-    margin-top: 0;
-    margin-bottom: .5em;
+    padding-top: 1em;
+    padding-bottom: 0;
+    color: #F9DCC4;
 }
 
 @media screen and (min-width: 768px){
     .project-title {
-        margin: 1em auto .5em auto;
+        padding: 1em auto .5em auto;
+    }
+
+    .project-container {
+        margin: 0 2em;
     }
 }

@@ -1,7 +1,8 @@
 .blog-title {
     text-align: center;
-    margin-top: 0;
-    margin-bottom: .5em;
+    padding-top: 1em;
+    padding-bottom: 0;
+    color: #F9DCC4;
 }
 
 .posts {
@@ -13,8 +14,7 @@
     margin: 1rem 0;
 
     a {
-        background: #f4f4f4;
-        color: #000000;
+        background: #f8edeb;
         display: block;
         padding: 1em;
         text-decoration: none;
@@ -22,18 +22,24 @@
     }
 
     a:hover {
-        background: #e4e4e4;
+        transition: .5s ease-out;
+        background: #f9dcc4;
     }
 
     h2 {
         text-align: center;
         margin-bottom: 0;
-        color: #000000;
+        color: #a89496;
+    }
+
+    h2:hover {
+        transition: .5s ease-out;
+        color: #6d6875;
     }
     
     p {
         text-align: center;
-        color: #777777;
+        color: #a89496;
         font-size: .8em;
         font-style: italic;
     }
@@ -41,6 +47,10 @@
 
 @media screen and (min-width: 768px) {
     .blog-title {
-        margin: 1em auto .5em auto;
+        padding: 1em auto .5em auto;
+    }
+
+    .posts {
+        margin: 0 7em;
     }
 }

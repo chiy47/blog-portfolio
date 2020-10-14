@@ -33,7 +33,7 @@ const ContactPage = () => {
             data: new FormData(form)
         })
         .then(r => {
-            handleServerResponse(true, "Thanks!", form);
+            handleServerResponse(true, "FORM HAS BEEN SUBMITTED.", form);
         })
         .catch(r => {
             handleServerResponse(false, r.response.data.error, form);

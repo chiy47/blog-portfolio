@@ -14,15 +14,11 @@ library.add(fab, fas)
 
 const Layout = (props) => {
     return (
-        <div className={layoutStyles.margin}>
-            <Header />
-
-            <div className={layoutStyles.body}>
-                {props.children} 
-            </div>          
-
+        <div>
+            <Header />   
+            {props.children} 
             <Footer />
-        </div>
+        </div>       
     )
 }
 

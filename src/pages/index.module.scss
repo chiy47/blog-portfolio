@@ -1,16 +1,69 @@
 .home-title {
+    padding-top: 3em;
+    padding-bottom: 0;
     text-align: center;
-    margin-top: 0;
-    margin-bottom: .5em;
+    color: #F9DCC4;
 }
 
-.home-image {
-    max-width: 100%;
-    height: auto;
+.home-intro {
+    padding: 0;
+    text-align: center;
+    color: #a89496;
 }
+
+.learn-more-container {
+    margin: 0 4em;
+    padding: 0;
+}
+
+.learn-more-btn {
+    background-color: #fcd5ce;
+    border: none;
+    border-radius: 4px;
+    color: #a89496;
+    text-align: center;
+    font-size: 1em;
+    padding: .5em;
+    width: 15em;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 36px;
+}
+
+.learn-more-btn{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+
+.learn-more-btn:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;  
+    top: .5em;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+.learn-more-btn:hover{
+    padding-right: 24px;
+    padding-left:8px;
+    background: #fec89a;
+  }
+  
+.learn-more-btn:hover:after {
+    opacity: 1;
+    right: 10px;
+  }
+
 
 @media only screen and (min-width: 768px) {
     .home-title {
-        margin: 1em auto .5em auto;
+        padding: 1em auto 0 auto;
+    }
+
+    .learn-more-container {
+        margin: 0 28em;
     }
 }

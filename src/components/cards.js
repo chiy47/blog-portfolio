@@ -2,7 +2,7 @@ import React from 'react'
 
 import CardItem from './cardItem'
 import cardsStyles from './cards.module.scss'
-import img from './images/grey_background.jpg'
+import img from './images/blogportfolio.png'
 
 const Cards = () =>  {
     return (

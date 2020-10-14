@@ -1,11 +1,13 @@
 .contact-title {
     text-align: center;
-    margin-top: 0;
-    margin-bottom: .5em;
+    padding-top: 1em;
+    padding-bottom: 0;
+    color: #F9DCC4;
 }
 
 .container {
-    margin: 0 2em;
+    margin: 0 1em;
+    padding: 0 2em;
 }
 
 .contact-body {
@@ -26,9 +28,17 @@
         margin: 0;
     }
 
-    span {
-        padding-left: .5em;
-        font-size: .9em;
+    a {
+        text-decoration: none;
+        span {
+            padding-left: .5em;
+            font-size: .9em;
+            color: #6d6875;
+        }
+
+        span:hover {
+            color: blue;
+        }
     }
 }
 
@@ -69,19 +79,20 @@
 }
 
 .form-control {
+    background: white;
     width: 100%;
     padding: 5px;
     //border: none;
     //outline: none;
     font-size: .9em;
-    color: black;
+    color: #6d6875;
     border-radius:0px/100%;
-    border: 1px solid lightgrey;
+    border: 2px solid #f9dcc4;
     transition: border-color 0.2s;
 }
 
 .form-control:hover {
-    border-color: black;
+    border-color: #ffb5a7;
 }
 
 .form-control-file {
@@ -98,9 +109,9 @@
 }
 
 .form-btn {
-    background-color:#e7e7e7;
+    background-color:#f8edeb;
     border: none;
-    color: black;
+    color: #e69597;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
@@ -110,8 +121,7 @@
 }
 
 .form-btn:hover {
-    background-color: black;
-    color: white;
+    background-color: #fec89a;
     font-size: 1.1em;
     padding: 16px 33px;
 } 
@@ -119,12 +129,10 @@
 
 
 @media screen and (min-width: 768px){
-    .contact-title {
-        margin: 1em auto .5em auto;
-    }
 
     .container {
-        margin: 0 5em;
+        margin: 0 7em;
+        padding: 0 5em;
     }
 
     .guest-contact {

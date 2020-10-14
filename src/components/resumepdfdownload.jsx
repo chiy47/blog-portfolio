@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { PDFViewer, PDFDownloadLink, StyleSheet } from "@react-pdf/renderer";
+import { PDFDownloadLink, StyleSheet } from "@react-pdf/renderer";
 
 import PdfResume from "./resumepdf";
 
