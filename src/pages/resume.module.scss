@@ -34,16 +34,23 @@
 }
 
 .location {
+    text-align: right;
+    margin-right: 1.2em;
     padding-top: 2em;
     font-size: .75em;
+    font-weight: bold;
+    color: black;
 }
 
 .contact {
+    text-align: right;
+    margin-right: 1.2em;
     font-size: .75em;
     padding-bottom: 1em;
 
     a {
         color: black;
+        font-weight: bold;
         text-decoration: none;
     }
     
@@ -72,6 +79,7 @@
     font-weight: bold;
     font-size: 1em;
     color: #ceb5b7;
+    max-width: 40em;
 }
 
 .job {
@@ -111,7 +119,7 @@
 
 .date {
     padding-bottom: .5em;
-    font-size: .8em;
+    font-size: .7em;
 }
 
 .skill-title-container {
@@ -147,11 +155,12 @@
 
     .location {
         padding-top: 8em;
-        font-size: .8em;
+        font-size: .7em;
+        
     }
 
     .contact {
-        font-size: .8em;
+        font-size: .7em;
     }
 
     .resume-image {
@@ -186,12 +195,12 @@
 
 @media only screen and (min-width: 960px) {
     .container {
-        margin: 0 5em;
+        margin: 0 7em;
         padding: 2em;
     }
 
     .top {
-        grid-template-columns: 1.8fr 1.4fr .8fr;
+        grid-template-columns: 1.5fr 1.7fr .8fr;
     }
 
     .name {
@@ -202,12 +211,14 @@
         font-size: 1.8em;
     }
 
-    .location {
-        font-size: .9em;
+    .location { 
+        margin-right: 2em;
+        font-size: .8em;
     }
 
     .contact {
-        font-size: .9em;
+        margin-right: 2em;
+        font-size: .8em;
     }
 
     .description {
