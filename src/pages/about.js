@@ -26,7 +26,7 @@ const AboutPage = () => {
                         I earned a bachelor's degree in Computer Science in 2019.</p>
 
                     <p>As a child, I was good at drawing. I am very excited to see the potential beauty in everything. 
-                        Other interests include math, science, and technology. 
+                        Other interests include math, science and technology. 
                         As a result, I seek to implement my artistic and problem-solving skills into tech.</p>
 
                     <p>I always wanted to make my own blog. 
