@@ -1,5 +1,5 @@
 .project-container {
-    margin: 0 1em;
+    margin: 0 auto;
     padding: 0;
 }
 
@@ -7,7 +7,7 @@
     text-align: center;
     padding-top: 1em;
     padding-bottom: 0;
-    color: #F9DCC4;
+    color: #ff7477;
 }
 
 @media screen and (min-width: 768px){
@@ -16,6 +16,6 @@
     }
 
     .project-container {
-        margin: 0 2em;
+        margin: 0 1em;
     }
 }

@@ -2,48 +2,48 @@
     text-align: center;
     padding-top: 1em;
     padding-bottom: .5em;
-    color: #F9DCC4;
+    color: #ff7477;
 }
 
 .container {
-    margin: 0 2em;
+    margin: 0 .5em;
     padding: 1em;
     //border: 1px solid lightgrey;
-    box-shadow: 5px 10px 18px .1em #cdb4db;
+    box-shadow: 5px 10px 18px .1em #ceb5b7;
     background: white;
-    color: #6d6875;
+    color: black;
 }
 
 .top {
     display: grid;
-    grid-template-columns: 22fr 1fr; 
-    border-bottom: 1px solid lightgrey;
+    grid-template-columns: 2fr 1fr; 
+    border-bottom: 2px solid #e69597;
 }
 
 .name {
     font-size: 3em;
     line-height: 1;
-    color: #b5d6d6;
+    color: #e69597;
 }
 
 .title {
     padding-top: .3em;
-    font-size: 1.3em;
+    font-size: 1.2em;
     font-weight: 300;
-    color: #b5838d;
+    color: #ceb5b7;
 }
 
 .location {
-    padding-top: 1em;
-    font-size: .9em;
+    padding-top: 1.5em;
+    font-size: 1em;
 }
 
 .contact {
-    font-size: .9em;
+    font-size: 1em;
     padding-bottom: 1em;
 
     a {
-        color: #6d6875;
+        color: black;
         text-decoration: none;
     }
     
@@ -52,12 +52,16 @@
     }
 }
 
+.resume-image {
+    max-width: 100%;
+}
+
 .section {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 1em;
     padding-top: 1em;
-    border-bottom: 1px solid lightgrey;
+    border-bottom: 2px solid #e69597;
 }
 
 .section:last-child {
@@ -67,10 +71,11 @@
 .section-title {
     font-weight: bold;
     font-size: 1em;
+    color: #ceb5b7;
 }
 
 .job {
-    border-bottom: 1px solid lightgrey;
+    border-bottom: 2px solid #e69597;
 }
 
 .job:last-child {
@@ -88,7 +93,7 @@
 }
 
 .job-company {
-    font-size: .85em;
+    font-size: .9em;
 }
 
 .description {
@@ -96,7 +101,7 @@
     font-size: .8em;
 
     a {
-        color: #6d6875;
+        color: black;
     }
     
     a:hover {
@@ -106,7 +111,7 @@
 
 .date {
     padding-bottom: .5em;
-    font-size: .85em;
+    font-size: .8em;
 }
 
 .skill-title-container {
@@ -117,24 +122,43 @@
     font-size: .9em;
 }
 
-
 @media only screen and (min-width: 768px) {
     .resume-title {
         padding: 1em auto .5em auto;
     }
 
     .container {
-        margin: 0 15em;
+        margin: 0 1em;
         padding: 2em;
     }
 
+    .top {
+        grid-template-columns: 2.7fr 1fr;
+    }
+
     .name {
-        font-size: 3em;
+        font-size: 3.5em;
     }
 
     .title {
         padding-top: .5em;
+        font-size: 1.3em;
     }
+
+    .location {
+        padding-top: 2.5em;
+        font-size: 1.1em;
+    }
+
+    .contact {
+        font-size: 1.1em;
+    }
+
+    .resume-image {
+        height: 18em;
+        width: 12em;
+    }
+
     .section {
         grid-template-columns: 1fr 4fr;
     }
@@ -156,9 +180,44 @@
     }
 
     .description {
-        max-width: 30em;
+        max-width: 25em;
     }
 }
+
+@media only screen and (min-width: 960px) {
+    .container {
+        margin: 0 7em;
+        padding: 2em;
+    }
+
+    .top {
+        grid-template-columns: 3.7fr 1fr; 
+
+    }
+
+    .name {
+        text-align: center;
+        font-size: 4em;
+    }
+
+    .title {
+        text-align: center;
+        font-size: 1.7em;
+    }
+
+    .location {
+        text-align: center;
+    }
+
+    .contact {
+        text-align: center;
+    }
+
+    .description {
+        max-width: 45em;
+    }
+}
+
 
 
 

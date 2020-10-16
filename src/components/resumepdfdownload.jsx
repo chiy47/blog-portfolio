@@ -8,7 +8,7 @@ const styles = StyleSheet.create({
         textDecoration: "none",
         marginRight: "0px",
         //padding: "7px",
-        //color: "#4a4a4a",
+        color: "black",
         //backgroundColor: "#f1f1f1",
         fontSize: "15px",
         //border: "1px solid #4a4a4a"

@@ -2,19 +2,19 @@
     text-align: center;
     padding-top: 1em;
     padding-bottom: 0;
-    color: #F9DCC4;
+    color: #ff7477;
 }
 
 .posts {
     list-style-type: none;
-    margin: 0 2em;
+    margin: 0 1em;
 }
 
 .post {
     margin: 1rem 0;
 
     a {
-        background: #f8edeb;
+        background: black;
         display: block;
         padding: 1em;
         text-decoration: none;
@@ -23,23 +23,22 @@
 
     a:hover {
         transition: .5s ease-out;
-        background: #f9dcc4;
+        background: #ceb5b7;
     }
 
     h2 {
         text-align: center;
         margin-bottom: 0;
-        color: #a89496;
+        color: white;
     }
 
     h2:hover {
-        transition: .5s ease-out;
-        color: #6d6875;
+        color: white;
     }
     
     p {
         text-align: center;
-        color: #a89496;
+        color: white;
         font-size: .8em;
         font-style: italic;
     }

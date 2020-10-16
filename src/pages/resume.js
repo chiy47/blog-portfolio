@@ -3,7 +3,8 @@ import React from 'react'
 import Layout from '../components/layout'
 import resumeStyles from './resume.module.scss'
 import Head from '../components/head'
-import ResumePdfDownload from "../components/resumepdfdownload"
+import ResumePdfDownload from '../components/resumepdfdownload'
+import portrait from '../components/images/portrait.jpg'
 
 const ResumePage = () => {
     return (
@@ -27,9 +28,14 @@ const ResumePage = () => {
                            <a href="https://github.com/chiy47">https://github.com/chiy47</a>
                            </div>
                         </div>
+
+                        <div className={resumeStyles.contact}>
+                            <ResumePdfDownload />
+                        </div>
                    </div>
-                   <div>
-                        <ResumePdfDownload />
+
+                   <div className={resumeStyles.resumeImage}>
+                       <img alt="graduated portrait" src={portrait}></img>
                    </div>
                </section>
 
