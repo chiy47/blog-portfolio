@@ -16,30 +16,30 @@
 
 .top {
     display: grid;
-    grid-template-columns: 2fr 1fr; 
+    grid-template-columns: 1.3fr 1.7fr 1fr; 
     border-bottom: 2px solid #e69597;
 }
 
 .name {
-    font-size: 3em;
+    font-size: 2em;
     line-height: 1;
     color: #e69597;
 }
 
 .title {
     padding-top: .3em;
-    font-size: 1.2em;
+    font-size: .9em;
     font-weight: 300;
     color: #ceb5b7;
 }
 
 .location {
-    padding-top: 1.5em;
-    font-size: 1em;
+    padding-top: 2em;
+    font-size: .75em;
 }
 
 .contact {
-    font-size: 1em;
+    font-size: .75em;
     padding-bottom: 1em;
 
     a {
@@ -132,26 +132,26 @@
         padding: 2em;
     }
 
-    .top {
-        grid-template-columns: 2.7fr 1fr;
-    }
+   .top {
+       grid-template-columns: 1.6fr 1.4fr 1fr;
+   }
 
     .name {
-        font-size: 3.5em;
+        font-size: 3em;
     }
 
     .title {
         padding-top: .5em;
-        font-size: 1.3em;
+        font-size: 1em;
     }
 
     .location {
-        padding-top: 2.5em;
-        font-size: 1.1em;
+        padding-top: 8em;
+        font-size: .8em;
     }
 
     .contact {
-        font-size: 1.1em;
+        font-size: .8em;
     }
 
     .resume-image {
@@ -186,35 +186,32 @@
 
 @media only screen and (min-width: 960px) {
     .container {
-        margin: 0 7em;
+        margin: 0 5em;
         padding: 2em;
     }
 
     .top {
-        grid-template-columns: 3.7fr 1fr; 
-
+        grid-template-columns: 1.8fr 1.4fr .8fr;
     }
 
     .name {
-        text-align: center;
         font-size: 4em;
     }
 
     .title {
-        text-align: center;
-        font-size: 1.7em;
+        font-size: 1.8em;
     }
 
     .location {
-        text-align: center;
+        font-size: .9em;
     }
 
     .contact {
-        text-align: center;
+        font-size: .9em;
     }
 
     .description {
-        max-width: 45em;
+        max-width: 50em;
     }
 }
 

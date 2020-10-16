@@ -19,7 +19,7 @@ const AboutPage = () => {
                 <div className={aboutStyles.aboutText}>
                     <p><span className={aboutStyles.firstCharacter}>H</span>
                     i, my name is Chi Duong (pronounced “Chee Yoong”. 
-                    The "Y" sound was enunciated for the letter "D"). 
+                    The "Y" sound is enunciated for the letter "D"). 
                         I am a web developer based in Maryland, USA.</p>
 
                     <p>I was born in Vietnam, went to the USA in 2015, and started programming in Summer 2017. 

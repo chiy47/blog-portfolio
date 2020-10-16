@@ -16,6 +16,9 @@ const ResumePage = () => {
                    <div className={resumeStyles.profile}>
                        <div className={resumeStyles.name}>Chi Duong</div>
                        <div className={resumeStyles.title}>Full Stack Web Developer</div>
+                    </div>
+                    
+                    <div>
                        <div className={resumeStyles.location}>Maryland, USA</div>
                        <div className={resumeStyles.contact}>
                             <div>
