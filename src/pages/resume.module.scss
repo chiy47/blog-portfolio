@@ -34,8 +34,6 @@
 }
 
 .location {
-    text-align: right;
-    margin-right: 1.2em;
     padding-top: 2em;
     font-size: .75em;
     font-weight: bold;
@@ -43,8 +41,6 @@
 }
 
 .contact {
-    text-align: right;
-    margin-right: 1.2em;
     font-size: .75em;
     padding-bottom: 1em;
 
@@ -132,15 +128,12 @@
 
 @media only screen and (min-width: 480px) {
     .top {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
     }
 
-    .location {
-        margin: auto;
-    }
-
-    .contact {
-        margin: auto;
+    .resume-image {
+        height: 15em;
+        width: 10em;
     }
 }
 
@@ -168,12 +161,16 @@
     }
 
     .location {
+        text-align: right;
+        margin-right: 1.2em;
         padding-top: 8em;
         font-size: .7em;
         
     }
 
     .contact {
+        text-align: right;
+        margin-right: 1.2em;
         font-size: .7em;
     }
 
