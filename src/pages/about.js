@@ -22,11 +22,11 @@ const AboutPage = () => {
                     the letter "D" is pronounced like a "Y"). 
                         I am a web developer based in Maryland, USA.</p>
 
-                    <p>I was born in Vietnam, went to the USA in 2015 and started programming in Summer 2017. 
+                    <p>I was born in Vietnam, went to the USA in 2015 and started programming in 2017. 
                         I earned a bachelor's degree in Computer Science in 2019.</p>
 
                     <p>As a child, I was good at drawing. I am very excited to see the potential beauty in everything. 
-                        Other interests include math, science and technology. 
+                        Other interests include technology, math and science. 
                         As a result, I seek to implement my artistic and problem-solving skills into tech.</p>
 
                     <p>I always wanted to make my own blog. 

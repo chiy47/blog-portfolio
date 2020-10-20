@@ -4,7 +4,7 @@
 
 .cards-intro {
     text-align: center;
-    color: black;
+    color: #e69597;
 }
 
 .cards-container {
@@ -63,8 +63,8 @@
     margin-right: 1em;
     text-align: center;
     padding: 0 .5em;
-    background: black;
-    color: white;
+    background: #ceb5b7;
+    color: black;
 }
 
 .card-item-info {
@@ -74,7 +74,7 @@
 .card-item-text {
     height: 0.5em;
     text-align: center;
-    color: black;
+    color: #e69597;
     font-size: 1.2em;
     line-height: 24px;
 }
@@ -86,9 +86,17 @@
     padding-bottom: 1em;
 }
 
-.icon {
+.icons {
     list-style: none;
     padding-left: 1em;
+}
+
+.icons-color {
+    color: #ff7477;
+}
+
+.icons-color:hover {
+    color: #ceb5b7;
 }
 
 @media screen and (min-width: 950px){

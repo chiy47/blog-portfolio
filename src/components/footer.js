@@ -17,11 +17,11 @@ const Footer = () => {
     return (
         <footer className={footerStyles.footer}>
             <div className={footerStyles.iconsContainer}>
-                <div className={footerStyles.icon}>
-                    <a href="https://github.com/chiy47" target="blank"><FontAwesomeIcon icon={["fab", "github"]} /></a> 
+                <div>
+                    <a href="https://github.com/chiy47" target="blank"><FontAwesomeIcon icon={["fab", "github"]} className={footerStyles.icons} /></a> 
                 </div>
-                <div className={footerStyles.icon}>
-                    <a href="https://www.linkedin.com/in/chi-duong-b88098175/" target="blank"><FontAwesomeIcon icon={["fab", "linkedin"]} /></a> 
+                <div>
+                    <a href="https://www.linkedin.com/in/chi-duong-b88098175/" target="blank"><FontAwesomeIcon icon={["fab", "linkedin"]} className={footerStyles.icons} /></a> 
                 </div>
         </div>
             <p>Created by {data.site.siteMetadata.author}, &copy; 2020</p>

@@ -17,8 +17,8 @@ const CardItem = (props) => {
                 <h5 className={cardsStyles.cardItemText}>{props.text}</h5>
                 <ul className={cardsStyles.tools}>{cardsList}</ul> 
                 <ul className={cardsStyles.iconsList}>
-                    <Link className={cardsStyles.icon} to={props.demo} target="blank"><FontAwesomeIcon icon={["fas", "link"]} /></Link>
-                    <Link className={cardsStyles.icon} to={props.repo} target="blank"><FontAwesomeIcon icon={["fab", "github"]} /></Link>
+                    <Link className={cardsStyles.icons} to={props.demo} target="blank"><FontAwesomeIcon icon={["fas", "link"]} className={cardsStyles.iconsColor}/></Link>
+                    <Link className={cardsStyles.icons} to={props.repo} target="blank"><FontAwesomeIcon icon={["fab", "github"]} className={cardsStyles.iconsColor}/></Link>
                 </ul>
             </div>
         </div>

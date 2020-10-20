@@ -15,9 +15,14 @@
     justify-content: center;
 }
 
-.icon {
+.icons {
     font-size: 30px;
     width: 30px;
     margin-right: .5em;
     margin-bottom: .3em;
+    color: #ff7477;
+}
+
+.icons:hover {
+    color: #ceb5b7;
 }
