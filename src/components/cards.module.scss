@@ -21,7 +21,7 @@
 }
 
 .card-item {
-    box-shadow: 5px 10px 18px lightgrey;
+    box-shadow: 5px 10px 18px .1em #ceb5b7;
     //border: 1px solid lightgrey;
 }
 
@@ -81,6 +81,7 @@
 
 .icons-list {
     text-align: right;
+    padding-top: 1em;
     padding-right: 1em;
     padding-bottom: 1em;
 }

@@ -13,12 +13,15 @@ const ResumePage = () => {
            <h1 className={resumeStyles.resumeTitle}>Resume</h1>
            <div className={resumeStyles.container}>
                <section className={resumeStyles.top}>
+                    <div className={resumeStyles.resumeImage}>
+                       <img alt="graduated portrait" src={portrait}></img>
+                   </div>
+           
                    <div className={resumeStyles.profile}>
                        <div className={resumeStyles.name}>Chi Duong</div>
                        <div className={resumeStyles.title}>Full Stack Web Developer</div>
-                    </div>
-                    
-                    <div>
+
+                       <div>
                        <div className={resumeStyles.location}>Maryland, USA</div>
                        <div className={resumeStyles.contact}>
                             <div>
@@ -36,10 +39,9 @@ const ResumePage = () => {
                             <ResumePdfDownload />
                         </div>
                    </div>
+                    </div>
 
-                   <div className={resumeStyles.resumeImage}>
-                       <img alt="graduated portrait" src={portrait}></img>
-                   </div>
+
                </section>
 
                <section className={resumeStyles.section}>
