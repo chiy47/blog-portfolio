@@ -132,8 +132,8 @@ const PdfResume = () => {
                         </Text>
 
                         <Text style={styles.jobDescription}>
-                            <Link style={styles.linkItem} src="https://musing-swirles-ab27a1.netlify.app/">
-                            -demo: https://musing-swirles-ab27a1.netlify.app/</Link>
+                            <Link style={styles.linkItem} src="https://www.chiquynhduong.com">
+                            -link: https://www.chiquynhduong.com</Link>
                         </Text>
 
                         <Text style={styles.jobDescription}>

@@ -69,7 +69,7 @@ const ResumePage = () => {
                                     <div className={resumeStyles.description}>
                                         <div>-powered by CMS Contentful, Gatsby.js and Netlify</div>
                                         <div>
-                                            <a href="https://musing-swirles-ab27a1.netlify.app/" target="blank">-demo: https://musing-swirles-ab27a1.netlify.app/</a>
+                                            <a href="https://www.chiquynhduong.com" target="blank">-link: https://www.chiquynhduong.com</a>
                                         </div>
                                         <div>
                                             <a href="https://github.com/chiy47/blog-portfolio" target="blank">-repo: https://github.com/chiy47/blog-portfolio</a>

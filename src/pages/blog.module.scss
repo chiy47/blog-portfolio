@@ -14,7 +14,7 @@
     margin: 1rem 0;
 
     a {
-        background: #e69597;
+        background: black;
         display: block;
         padding: 1em;
         text-decoration: none;
@@ -23,17 +23,17 @@
 
     a:hover {
         transition: .5s ease-out;
-        background: #ceb5b7;
+        background: #e69597;
+
+        h2 {
+            color: white;
+        }
     }
 
     h2 {
         text-align: center;
         margin-bottom: 0;
-        color: white;
-    }
-
-    h2:hover {
-        color: white;
+        color: #ceb5b7;
     }
     
     p {

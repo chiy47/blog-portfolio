@@ -16,7 +16,7 @@ const Cards = () =>  {
                                 src={img}
                                 text='Blog and Portfolio'
                                 label={['Gatsby','graphQL', 'Contentful']}
-                                demo='https://musing-swirles-ab27a1.netlify.app/'
+                                demo='https://www.chiquynhduong.com'
                                 repo='https://github.com/chiy47/blog-portfolio'
                             />
                         </li> 
