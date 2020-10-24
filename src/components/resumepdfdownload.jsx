@@ -1,19 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { PDFDownloadLink, StyleSheet } from "@react-pdf/renderer";
+import { PDFDownloadLink } from "@react-pdf/renderer";
 
 import PdfResume from "./resumepdf";
 
-const styles = StyleSheet.create({
-    button: {
-        textDecoration: "none",
-        marginRight: "0px",
-        //padding: "7px",
-        color: "black",
-        //backgroundColor: "#f1f1f1",
-        fontSize: "15px",
-        //border: "1px solid #4a4a4a"
-    },
-})
+
 
 const ResumePdfDownload = () => {
     const [isClient, setIsClient] = useState(false)
@@ -26,8 +16,7 @@ const ResumePdfDownload = () => {
         <div>
             {isClient && (
                 <PDFDownloadLink
-                    document={<PdfResume />} 
-                    style={styles.button}>
+                    document={<PdfResume />} >
                     {({ blob, url, loading, error }) => {
                         return loading ? 'Loading document...' : 
                         <a href={url} target="blank">PDF</a>

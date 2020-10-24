@@ -98,6 +98,11 @@ const PdfResume = () => {
                                 https://github.com/chiy47</Link>
                         </Text>
 
+                        <Text style={styles.contact}>
+                            <Link style={styles.linkItem} src="https://www.linkedin.com/in/chi-duong-b88098175">
+                            https://www.linkedin.com/in/chi-duong-b88098175</Link>
+                        </Text>
+
                         <Text style={styles.about}>
                         A technology enthusiast is eager to find a junior position and build interesting projects.
                         </Text>
@@ -113,7 +118,7 @@ const PdfResume = () => {
                         Languages: JavaScript, HTML, CSS/SASS
                     </Text>
                     <Text style={styles.jobDescription}>
-                        Development: Node.js, Express.js, MongoDB, Gatsby.js, React
+                        Development: Node.js, Express.js, MongoDB, GraphQL, Gatsby.js, React
                     </Text>                    
                 </View>
                 

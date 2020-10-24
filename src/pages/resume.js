@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'gatsby'
 
 import Layout from '../components/layout'
 import resumeStyles from './resume.module.scss'
@@ -6,12 +7,21 @@ import Head from '../components/head'
 import ResumePdfDownload from '../components/resumepdfdownload'
 import portrait from '../components/images/portrait.jpg'
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 const ResumePage = () => {
     return (
        <Layout>
            <Head title="Resume" />
            <h1 className={resumeStyles.resumeTitle}>Resume</h1>
+
+           <div className={resumeStyles.pdfContainer}>
+                <FontAwesomeIcon icon={["fas", "file-pdf"]} className={resumeStyles.pdfIcon} />
+                <ResumePdfDownload />
+            </div> 
+
            <div className={resumeStyles.container}>
+
                <section className={resumeStyles.top}>
                     <div className={resumeStyles.resumeImage}>
                        <img alt="graduated portrait" src={portrait}></img>
@@ -21,26 +31,35 @@ const ResumePage = () => {
                        <div className={resumeStyles.name}>Chi Duong</div>
                        <div className={resumeStyles.title}>Full Stack Web Developer</div>
 
-                       <div>
-                       <div className={resumeStyles.location}>Maryland, USA</div>
-                       <div className={resumeStyles.contact}>
-                            <div>
-                           <a href="tel:240-584-3783">240-584-3783</a>
-                           </div>
-                           <div>
-                           <a href="mailto:chiduong4107@gmail.com">chiduong4107@gmail.com</a>
-                           </div>
-                           <div>
-                           <a href="https://github.com/chiy47">https://github.com/chiy47</a>
-                           </div>
-                        </div>
+                       <div className={resumeStyles.profileInfo}>
+                            <div className={resumeStyles.contact}>
+                                <div className={resumeStyles.location}>
+                                    <FontAwesomeIcon icon={["fas", "home"]} className={resumeStyles.icons} />
+                                    Maryland, USA
+                                </div>
+                            
+                                <div>
+                                    <FontAwesomeIcon icon={["fas", "phone"]} className={resumeStyles.icons} />
+                                    <a href="tel:240-584-3783">240-584-3783</a>
+                                </div>
 
-                        <div className={resumeStyles.contact}>
-                            <ResumePdfDownload />
-                        </div>
+                                <div>   
+                                    <FontAwesomeIcon icon={["fas", "envelope"]} className={resumeStyles.icons} />
+                                    <a href="mailto:chiduong4107@gmail.com">chiduong4107@gmail.com</a>
+                                </div>
+
+                                <div>
+                                    <FontAwesomeIcon icon={["fab", "github"]} className={resumeStyles.icons} />
+                                    <a href="https://github.com/chiy47">https://github.com/chiy47</a>
+                                </div>
+
+                                <div>
+                                    <FontAwesomeIcon icon={["fab", "linkedin"]} className={resumeStyles.icons} />
+                                <a href="https://www.linkedin.com/in/chi-duong-b88098175">https://www.linkedin.com/in/chi-duong-b88098175</a>
+                            </div>   
+                        </div> 
                    </div>
                     </div>
-
 
                </section>
 
@@ -54,7 +73,7 @@ const ResumePage = () => {
 
                        <div className={resumeStyles.skillTitleContainer}>
                             <div className={resumeStyles.jobTitle}>Development</div>
-                            <div className={resumeStyles.skill}>Node.js, Express.js, MongoDB, Gatsby.js, React</div>
+                            <div className={resumeStyles.skill}>Node.js, Express.js, MongoDB, GraphQL, Gatsby.js, React</div>
                        </div>
                    </div>
                </section>

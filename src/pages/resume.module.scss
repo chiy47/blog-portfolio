@@ -1,7 +1,7 @@
 .resume-title {
     text-align: center;
     padding-top: 1em;
-    padding-bottom: .5em;
+    padding-bottom: 0em;
     color: #ff7477;
 }
 
@@ -41,17 +41,45 @@
     color: #ceb5b7;
 }
 
-.location {
-    text-align: center;
-    padding-top: 2em;
-    font-size: .9em;
-    color: black;
+.profile-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons {
+    margin-right: 1em;
+    color: #e69597;
+}
+
+
+.pdf-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 1em;
+    
+    a {
+        text-decoration: none;
+        color: black;
+        font-size: 1em;
+    }
+
+    a:hover {
+        color: blue;
+    }
+
+    .pdf-icon {
+        margin-right: .5em;
+        color: #e69597;
+        font-size: 1.1em;
+    }
 }
 
 .contact {
-    text-align: center;
     font-size: .9em;
     padding-bottom: 1em;
+    padding-top: 2em;
 
     a {
         color: black;
@@ -61,6 +89,10 @@
     a:hover {
             color: blue;
     }
+}
+
+.location {
+    color: black;
 }
 
 .resume-image {
@@ -134,7 +166,7 @@
 }
 
 .skill {
-    font-size: .9em;
+    font-size: .8em;
 }
 
 @media only screen and (min-width: 768px) {
@@ -227,12 +259,10 @@
 
     .location { 
         margin-right: .5em;
-        font-size: 1em;
     }
 
     .contact {
         margin-right: .5em;
-        font-size: 1em;
     }
 
     .description {
